@@ -4,7 +4,7 @@ class TaskController {
 
    async create(req, res){
     const task = new TaskModel(req.body);
-    console.log('bateu na create')
+
     await task
             .save()
             .then(response => {
